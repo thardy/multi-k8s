@@ -14,6 +14,7 @@ spec:
     spec:
       containers:
         - name: client
-          image: stephengrider/multi-client
+          image: timhardy/multi-client
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000
